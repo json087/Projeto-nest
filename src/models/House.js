@@ -1,11 +1,12 @@
 import { Schema, model } from "mongoose";
 import user from "./user";
+import { number } from "yup";
 
 
 const HouseSchema = new Schema({
     thumbnail: String,
     description: String,
-    price: Numeber,
+    price: Number,
     location: String,
     status: Boolean,
     user:{

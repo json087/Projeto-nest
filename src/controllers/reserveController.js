@@ -46,10 +46,10 @@ class ReserveController {
   async destroy(req, res) {
     const { reserve_id } = req.body;
 
-    await Reserve.findByIdAndDelete({_id: reserve_id})
+    await Reserve.findByIdAndDelete({ _id: reserve_id });
 
-    return res.send()
+    return res.send();
   }
 }
 
-export default new ReserveController()
+export default new ReserveController();
